@@ -30,20 +30,21 @@ const DropDown = () => {
                     <div key={subItem.id} className="flex flex-row gap-4 items-center">
                       {subItem.icon && (
                         <subItem.icon
-                          className={hoveredIndex === subItem.id ? "hovered" : "icon"}
+                        //   className={hoveredIndex === subItem.id ? "bg-black" : "bg-gray-400"}
+                        color={hoveredIndex===subItem.id ?" black":"grey"}
                           onMouseEnter={() => handleIconHover(subItem.id)}
                           onMouseLeave={() => setHoveredIndex(null)}
                         />
                       )}
                       <button
-                        className={hoveredIndex === subItem.id ? "text-gray-400 btn hovered" : "text-black btn"}
+                        className={hoveredIndex === subItem.id ? "text-black underline " : "text-gray-400 "}
                         onMouseEnter={() => handleButtonHover(subItem.id)}
                         onMouseLeave={() => setHoveredIndex(null)}
                       >
                         {subItem.itemsName}
                       </button>
                     </div>
-                    <MdKeyboardArrowRight/>
+                    <MdKeyboardArrowRight />
                     </div>
                   );
                 })}
