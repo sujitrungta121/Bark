@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Body from './components/Body';
 import { useEffect, useState } from 'react';
-import MobileNav from './components/MobileNav';
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);

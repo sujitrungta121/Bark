@@ -47,13 +47,13 @@ const Navbar = ({isHovered}) => {
         </div>
       </div>
 
-      <div className="flex flex-row sm:gap-8 lg:gap-4 items-center">
+      <div className="flex flex-row sm:gap-8 gap-4 lg:gap-4 items-center">
         <div className={` flex flex-row lg:border lg:border-solid lg:border-gray-400 sm:border-none sm:p-0 lg:p-1 rounded-md  items-center ${isHovered ? "block" : "hidden"}`}>
-          <input type="text" className="border-0 outline-none sm:hidden lg:block focus:outline-none" />
+          <input type="text" className="border-0 outline-none sm:hidden hidden lg:block focus:outline-none" />
           <FaSearch />
         </div>
         <span className="font-semibold">Login</span>
-        <div className="bg-sky-400 p-1 border-1  sm:hidden lg:block border-solid rounded-xl">
+        <div className="bg-sky-400 p-1 border-1 hidden  sm:hidden lg:block border-solid rounded-xl">
           <span>Join as a profession</span>
         </div>
       </div>

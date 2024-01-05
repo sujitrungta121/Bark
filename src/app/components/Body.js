@@ -5,8 +5,8 @@ import Image from "next/image";
 import Modal from "./Modal";
 const Body = () => {
   return (
-    <main className="bg-slate-50 gap-8 flex flex-col w-full items-center sm:items-start   lg:items-center  border-b lg:pt-40 lg:p-8 sm:p-4 sm:pt-40">
-      <div className="flex flex-col  gap-10">
+    <main className="bg-slate-50 border border-solid gap-8 flex flex-col w-[100%] sm:w-[100%] sm:items-start  pt-40 lg:items-center p-4 border-b lg:pt-40 lg:p-8 sm:p-4 sm:pt-40">
+      <div className="flex flex-col  w-full gap-10 lg:items-center">
         <div className="flex flex-col w-96 gap-2">
           <p className="font-bold lg:text-4xl sm:text-3xl">
             Find the perfect Professional for you
@@ -26,7 +26,7 @@ const Body = () => {
                   placeholder="What service are you looking for"
                 />
               </div>
-              <div className="border p-2 border-solid border-gray-500 sm:hidden flex flex-row items-center  gap-2">
+              <div className="border p-2 border-solid border-gray-500 sm:hidden hidden flex flex-row items-center  gap-2">
                 <FaMapMarkerAlt />
                 <input
                   type="text"
@@ -35,7 +35,7 @@ const Body = () => {
                 />
               </div>
             </div>
-            <button className="bg-sky-400  rounded-md">Search</button>
+            <button className="bg-sky-400  rounded-md p-2">Search</button>
           </div>
           <div>
             <span>Popular: House Cleaning, Web Design, Personal Trainers</span>
@@ -72,7 +72,7 @@ const Body = () => {
                 {
                 item.images.map(item=>{
                     return(
-                        <div className="flex flex-col border pb-2 gap-8 hover:scale-110 transition duration-300 ease-in-out">
+                        <div className="flex flex-col border pb-2 gap-8  sm:w-full w-full lg:w-full hover:scale-110 transition duration-300 ease-in-out ">
                     <Image src={item.image}  width={400} height={50} />
                     <span >{item.itemName}</span>
                     </div>
