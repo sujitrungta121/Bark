@@ -56,12 +56,24 @@ const handleClose=()=>{
       </div>
       
       </div>
-      <div className="flex flex-row justify-around ">
-   <span>copyright 2020 Bark.com Global Limited Terms & conditions/cookie policy/privacy policy</span>
-   <div>
+      <div className="flex lg:flex-row sm:flex-col gap-2 items-center lg:justify-between">
+      
+   
+   <div className="flex sm:flex-col lg:flex-row gap-2 sm:items-center">
+            
+            <span>&copy;  Bark.com Global Limited.</span>
+            <div className="flex flex-row gap-2">
+            <span >Terms & condition</span>
+            <span>/</span>
+            <span>cookie policy</span>
+            <span>/</span>
+            <span>Privacy Policy</span>
+            </div>
+            </div>
+            <div className="lg:flex lg:flex-col  sm:flex sm:flex-col">
     <span>TrustPilot</span>
-    <span>Trustscore <span>4.4</span></span>
-    <span><span>92,673</span> Reviews</span>
+    <span>Trustscore <span className="font-bold">4.4</span></span>
+    <span><span className="font-bold">92,673</span> Reviews</span>
    </div>
       </div>
       <Modal isOpen={modal} onClose={handleClose}/>

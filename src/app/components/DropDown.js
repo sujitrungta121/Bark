@@ -30,7 +30,7 @@ const DropDown = () => {
                     <div key={subItem.id} className="flex flex-row gap-4 items-center">
                       {subItem.icon && (
                         <subItem.icon
-                        //   className={hoveredIndex === subItem.id ? "bg-black" : "bg-gray-400"}
+
                         color={hoveredIndex===subItem.id ?" black":"grey"}
                           onMouseEnter={() => handleIconHover(subItem.id)}
                           onMouseLeave={() => setHoveredIndex(null)}
